@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>萝卜科技</title>
+  <link rel="stylesheet" href="./css/home.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/css/swiper.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/1.0.1/vconsole.min.js"></script>
+  <script>
+    var vconsole = new Vconsole()
+  </script> -->
+  <div class="content">
+    <div class="head-old"></div>
+    <div class="home-header">
+      <div>
+        <p class="homeLogo"><img src="./img/Homelogo.png" alt=""></p>
+        <p><span>首页</span> <span onClick="toSolution()">行业解决方案</span><span onClick="toCall()">联系我们</span></p>
+      </div>
+    </div>
+    <div class="home-swiper">
+      <div class="home-swiper-bg">
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <p>Working Phone 打造销冠团队的营销利器</p>
+              <p>精细化客户运营和销售管理</p>
+              <p>企业数据安全保护</p>
+              <p onClick="openShow(1)">免费试用</p>
+            </div>
+            <div><img src="./img/home/swiper1.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <p>搭建企业专属的客户流量池</p>
+              <p>全渠道电商平台打通，聚客引流至蓄客池</p>
+              <p>多维度客户标签体系，管理企业数据资产</p>
+              <p onClick="openShow(2)">预约演示</p>
+            </div>
+            <div><img src="./img/home/swiper2.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <p>AI技术赋能，数据驱动企业增长</p>
+              <p>强大数据分析能力，深度打磨行业算法</p>
+              <p>加速获客转化，为企业降本增效</p>
+              <p onClick="openShow(3)">立即咨询</p>
+            </div>
+            <div><img src="./img/home/swiper3.png" alt=""></div>
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
+    <div class="home-advertising">
+      <div>
+        <div class="advertising-item" style="border-left:none">
+          <img src="./img/home/advertising1.png" alt="">
+          <div>
+            <p>拓客成本高？</p>
+            <p>多维互动引流，开拓精准客户</p>
+          </div>
+        </div>
+        <div class="advertising-item">
+          <img src="./img/home/advertising2.png" alt="">
+          <div>
+            <p>客户管理难？</p>
+            <p>客户标签化管理，减少客户流失</p>
+          </div>
+        </div>
+        <div class="advertising-item">
+          <img src="./img/home/advertising3.png" alt="">
+          <div>
+            <p>销售转化低？</p>
+            <p>提高沟通效率，销售转化倍增</p>
+          </div>
+        </div>
+        <div class="advertising-item">
+          <img src="./img/home/advertising4.png" alt="">
+          <div>
+            <p>企业风控难？</p>
+            <p>智能质检系统，全程规避风险</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-makert ">
+      <div>
+        <p class="home-makert-p show-animation">如何实现企业数字化营销升级？</p>
+        <div>
+          <div class="home-makert-left show-animation">
+            <p>五步跃迁你的流量池</p>
+            <div>
+              <p></p> 全渠道拓客
+            </div>
+            <div>
+              <p></p>私域流量运营
+            </div>
+            <div>
+              <p></p>打造流量变现闭环
+            </div>
+          </div>
+          <div class="home-makert-right show-animation">
+            <img src="./img/home/maket1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-data">
+      <div>
+        <div class="home-data-header-old"></div>
+        <div class="home-data-header">
+          <div data-nav="1" onClick="to('1')">拉新/裂变</div>
+          <div data-nav="2" onClick="to('2')" style="border-left:0">引流</div>
+          <div data-nav="3" onClick="to('3')" style="border-left:0">留存</div>
+          <div data-nav="4" onClick="to('4')" style="border-left:0">促活</div>
+          <div data-nav="5" onClick="to('5')" style="border-left:0">转化</div>
+        </div>
+        <div class="home-data-item" style="margin:145px 0 240px;height: 240px;">
+          <div class="home-data-item-left show-animation">
+            <p>多渠道挖掘客户，降低拉新成本</p>
+            <div>
+              <p></p> 大数据AI模型，通过海量数据分析，挖掘潜在客户线索
+            </div>
+            <div>
+              <p></p>客户加群可选多个群随机分配，建群灵活快捷
+            </div>
+            <div>
+              <p></p>通过社群实现社交裂变，客户指数级增长
+            </div>
+          </div>
+          <div class="show-animation">
+            <img src="./img/home/item1.png" alt="">
+          </div>
+        </div>
+        <div class="home-data-item" style="height: 265px;flex-direction: row-reverse;">
+          <div class="home-data-item-left show-animation">
+            <p>高效聚客引流，活码不受限制</p>
+            <div>
+              <p></p> 公域平台粉丝汇聚到流量池，沉淀私域客户
+            </div>
+            <div>
+              <p></p>社交传播高效引流，活码有效分流客户，分渠道营销转化
+            </div>
+            <div>
+              <p></p>多渠道引流效果统计，引流效果实时查看，实时溯源
+            </div>
+          </div>
+          <div class="show-animation">
+            <img src="./img/home/item2.png" alt="">
+          </div>
+        </div>
+        <div class="home-data-item " style="margin:240px 0 240px;height: 273px;">
+          <div class="home-data-item-left show-animation">
+            <p>多维度客户画像，精准匹配客户需求</p>
+            <div>
+              <p></p> 多维度客户标签管理，精细描绘客户画像
+            </div>
+            <div>
+              <p></p>细分客户群体，持续挖掘客户潜在价值
+            </div>
+          </div>
+          <div class="show-animation">
+            <img src="./img/home/item3.png" alt="">
+          </div>
+        </div>
+        <div class="home-data-item" style="height: 265px;flex-direction: row-reverse;">
+          <div class="home-data-item-left show-animation">
+            <p>精细化运营，增强客户黏性</p>
+            <div>
+              <p></p>基于消费行为分析，精准推送不同的营销活动、产品组合
+            </div>
+            <div>
+              <p></p>多款促销工具，加速销售转化
+            </div>
+            <div>
+              <p></p>智能客服体系，快速响应客户，提升客服团队协作效率
+            </div>
+          </div>
+          <div class="show-animation">
+            <img src="./img/home/item4.png" alt="">
+          </div>
+        </div>
+        <div class="home-data-item" style="margin:240px 0 116px;height: 304px;">
+          <div class="home-data-item-left show-animation">
+            <p>丰富玩法工具，营销变现无忧</p>
+            <div>
+              <p></p> 打通各大电商平台，多端数据统一管理，提升复购效率
+            </div>
+            <div>
+              <p></p>细分客户群体，持续挖掘客户潜在价值
+            </div>
+            <div>
+              <p></p>丰富的营销插件，拉动销量增长
+            </div>
+          </div>
+          <div class="show-animation">
+            <img src="./img/home/item5.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-safety">
+      <div>
+        <p class="show-animation">企业管理效能优化，为数据安全保驾护航</p>
+        <div class="show-animation">
+          <div class="home-safety-item ">
+            <img src="./img/home/safety1.png" alt="">
+            <p>工作效益分析 营销风控预警</p>
+          </div>
+          <div class="home-safety-item ">
+            <img src="./img/home/safety2.png" alt="">
+            <p>营销规范统一 数据安全加固</p>
+          </div>
+          <div class="home-safety-item ">
+            <img src="./img/home/safety3.png" alt="">
+            <p>无缝客户交接 客户资产沉淀</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-coding">
+      <div>
+        <div class="home-coding-header">
+          <p>针对企业需求场景，灵活定制化开发</p>
+          <p>一 亮点功能 一</p>
+        </div>
+        <div class="home-coding-body show-animation">
+          <div class="home-coding-item ">
+            <img src="./img/home/coding1.png" alt="">
+            <p>数据分析</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding2.png" alt="">
+            <p>线索挖掘</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding3.png" alt="">
+            <p>用户画像</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding4.png" alt="">
+            <p>精准营销</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding5.png" alt="">
+            <p>社群营销</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding6.png" alt="">
+            <p>客户管理</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding7.png" alt="">
+            <p>风险控制</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding8.png" alt="">
+            <p>平台打通</p>
+          </div>
+          <div class="home-coding-item">
+            <img src="./img/home/coding9.png" alt="">
+            <p>数据安全</p>
+          </div>
+          <div class="home-coding-item">
+            <p>更多功能即将上线</p>
+            <p>敬请期待……</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-working ">
+      <img src="./img/home/footer-bg.png" alt="">
+      <div class="show-animation">
+        <p>数百家企业信赖之选，正在使用Working Phone</p>
+        <div>
+          <p>为全行业企业级客户提供服务，涵盖新零售、电商、教育、房产、婚恋、美业、金</p>
+          <p>融等行业领域，技术实力支撑，满足不同行业企业多样化需求。</p>
+        </div>
+        <p onClick="openShow(2)">即刻申请试用</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p>了解更多大数据赋能产品</p>
+        <div class="project-list">
+          <a href="http://www.lidaxian.cn/">
+            <div>
+              <img src="./img/callMe/datafound.png" alt="">
+              <p>AI房产专家 线上售楼部</p>
+
+            </div>
+          </a>
+          <a href="http://www.lidaxian.cn/">
+            <div>
+              <img src="./img/callMe/datageek.png" alt="">
+
+              <p>营销大数据分析平台 商业智能</p>
+            </div>
+          </a>
+          <a href="http://www.lidaxian.cn/">
+            <div>
+              <img src="./img/callMe/lan.png" alt="">
+
+              <p>电商行业分析平台</p>
+            </div>
+          </a>
+        </div>
+        <div class="com-detail">
+          <div>
+            <!-- <a href="http://www.lidaxian.cn/"><img src="./img/logo.png" alt=""></a> -->
+          </div>
+          <p>Copyright © 2019-2020 xxxxxx技术有限公司版权所有@浙ICP备xxxxxx号-1 <span><img src="./img/icon.png" />浙公网安备 xxxxxxxxxx号</span> </p>
+        </div>
+        <div class="footer-code">
+          <a><p></p ></a>
+         </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="show-bg">
+
+    <div class="show-bg-form">
+      <div class="close" onClick="closeBg()">
+        <img src="./img/close.png" alt="">
+      </div>
+      <div class="show-bg-form-show">
+        <p class="show-bg-form-title">申请免费试用</p>
+        <div class="show-bg-form-body">
+          <div class="show-bg-form-item">
+            <span>*</span>
+            <div><input type="text" placeholder="请输入姓名" id="name" onBlur="bl(1)"></div>
+            <div class="error"></div>
+          </div>
+          <div class="show-bg-form-item">
+            <span>*</span>
+            <div><input type="text" placeholder="请输入手机号" maxlength="11" id="phone" onBlur="bl(2)"></div>
+
+            <div class="error"></div>
+          </div>
+          <!-- <div class="show-bg-form-item">
+            <span>*</span>
+            <div><input type="text" placeholder="请输入手机验证码" id="code" onBlur="bl(3)"></div>
+            <div class="getCode" onClick="getCode()">获取验证码</div>
+            <div class="error"></div>
+          </div> -->
+          <div class="error"></div>
+          <div class="show-bg-form-item">
+            <span>*</span>
+            <div><input type="text" placeholder="请输入公司" id="com" onBlur="bl(4)"></div>
+            <div class="error"></div>
+          </div>
+          <div class="show-bg-form-item">
+            <span>*</span>
+            <div><input type="text" placeholder="请输入职位" id="job" onBlur="bl(5)"></div>
+            <div class="error"></div>
+          </div>
+          <p onClick="onClick()">提交</p>
+
+        </div>
+        <p class="footer-font">提交申请信息，即可扫描添加二维码免费试用/咨询/预约演示</p>
+      </div>
+      <div class="show-code">
+        <div>
+          <img src="./img/success.png" alt=""> <span>资料提交成功</span>
+        </div>
+        <div>
+          <img src="./img/code.png" alt="">
+        </div>
+        <p>可扫码咨询专业顾问</p>
+      </div>
+    </div>
+  </div>
+  <div class="float-code">
+    <div class="float-code-left">
+      <img src="./img/code.png " alt=>
+    </div>
+    <div class="float-code-btn">
+      <img src="./img/custServer.png" alt="" class="custServer">
+      <p>联</p>
+      <p>系</p>
+      <p>客</p>
+      <p>服</p>
+    </div>
+  </div>
+  <script>
+    function openShow(val) {
+      var body = document.body
+      var bg = document.getElementsByClassName("show-bg")[0]
+      var str = document.getElementsByClassName("footer-font")[0]
+      var showCode = document.getElementsByClassName("show-code")[0]
+      var bgShow = document.getElementsByClassName("show-bg-form-show")[0]
+      if (val == 1) {
+        str.textContent = "提交申请信息，即可扫描添加二维码免费试用"
+      } else if (val == 2) {
+        str.textContent = "提交申请信息，即可扫描添加二维码免费试用"
+      } else {
+        str.textContent = "提交申请信息，即可扫描添加二维码预约咨询"
+      }
+      body.style.overflowY = "hidden"
+      showCode.style.display = "none"
+      bgShow.style.display = "block"
+      bg.style.display = "block"
+
+    }
+    function closeBg() {
+      var body = document.body
+      var bg = document.getElementsByClassName("show-bg")[0]
+      bg.style.display = "none"
+      body.style.overflowY = "auto"
+    }
+    function getCode() {
+      var code = document.getElementsByClassName("getCode")[0]
+      var errorList = document.getElementsByClassName("error")
+      var phone = document.getElementById("phone");
+      let pattern = /^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+      if (pattern.test(phone.value)) {
+        errorList[1].textContent = ""
+      } else {
+        errorList[1].textContent = "请输入正确手机号"
+        return
+      }
+      fetch('/luobo/open/sms-code', {
+        body: 'phoneNumber=' + phone.value,
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8", "Accept": "application/json, text/plain, */*", "platform": "PC", "use-env": "dev" }
+      })
+        .then(function (response) {
+          return response.json()
+        }).then(res => {
+          let i = 60;
+          var time = setInterval(() => {
+            i--;
+            if (i <= 0) {
+              code.textContent = "获取验证码";
+              clearInterval(time);
+            } else {
+              code.textContent = i + "S"
+            }
+          }, 1000);
+        })
+
+    }
+    var bl = function (val) {
+      var name = document.getElementById("name");
+      var phone = document.getElementById("phone");
+      var code = document.getElementById("code");
+      var com = document.getElementById("com");
+      var job = document.getElementById("job");
+      var errorList = document.getElementsByClassName("error")
+      switch (val) {
+        case 1:
+          if (!name.value || name.value == '') {
+            errorList[0].textContent = "请输入姓名"
+          } else {
+            errorList[0].textContent = ""
+          }
+          break;
+        case 2:
+          let pattern = /^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+          if (pattern.test(phone.value)) {
+            errorList[1].textContent = ""
+          } else {
+            errorList[1].textContent = "请输入正确手机号"
+          }
+          break;
+        // case 3:
+        //   let codePattern = /^\d+$/g
+        //   if (code.value.length == 4 && codePattern.test(code.value)) {
+        //     errorList[2].textContent = ""
+        //   } else {
+        //     errorList[2].textContent = "请输入正确验证码"
+        //   }
+        //   break;
+        case 4:
+          if (!com.value || com.value == '') {
+            errorList[3].textContent = "请输入公司"
+          } else {
+            errorList[3].textContent = ""
+          }
+          break;
+        case 5:
+          if (!job.value || job.value == '') {
+            errorList[4].textContent = "请输入职位"
+          } else {
+            errorList[4].textContent = ""
+          }
+          break;
+        default:
+          break;
+      }
+    }
+    var onClick = function () {
+      var name = document.getElementById("name");
+      var phone = document.getElementById("phone");
+      var code = document.getElementById("code");
+      var com = document.getElementById("com");
+      var job = document.getElementById("job");
+      var errorList = document.getElementsByClassName("error")
+      var str = '';
+      for (let i = 1; i < 6; i++) {
+        if (i !== 3) {
+          bl(i)
+          str = str + errorList[i - 1].textContent
+        }
+
+      }
+      if (str.length > 0) return
+      let pram = {
+        name: name.value,
+        mobile: phone.value,
+        // smsCode: code.value,
+        company: com.value,
+        position: job.value
+      }
+      fetch('/luobo/open/cust-apply ', {
+        body: JSON.stringify(pram),
+        method: "POST",
+        headers: { "Content-Type": "application/json;charset=UTF-8", "Accept": "application/json, text/plain, */*", "platform": "PC", "use-env": "dev" }
+      })
+        .then(function (response) {
+          return response.json()
+        }).then(res => {
+          if (res.code == 200) {
+            var show = document.getElementsByClassName("show-bg-form-show")[0]
+            var showCode = document.getElementsByClassName("show-code")[0]
+            show.style.display = "none"
+            showCode.style.display = "block"
+            errorList[2].textContent = ""
+          } else if (res.code == 500) {
+            errorList[2].textContent = "请输入正确验证码"
+          } else {
+            alert(res.message)
+          }
+        })
+    };
+    function toCall() {
+      window.location = "./callMe.html"
+    }
+    function toSolution() {
+      window.location = "./solution.html"
+    }
+    var to = function (val) {
+      var hash = {
+        1: 1300,
+        2: 1773,
+        3: 2243,
+        4: 2753,
+        5: 3263
+      }
+      window.scrollTo(0, hash[val]);
+    }
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true, // 循环模式选项
+      preventClicksPropagation: false,
+      shortSwipes: false,
+      preventClicks: false,
+      autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+      },
+
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // 如果需要滚动条
+      scrollbar: {
+        hide: true
+      },
+    })
+    let isWe = isWeiXin();
+    function isWeiXin() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true
+      } else {
+        return false
+      }
+    }
+
+    if (isWe) {
+      var head = document.getElementsByClassName("home-header")[0];
+      var headOld = document.getElementsByClassName("head-old")[0]
+      head.style.position = "fixed"
+      headOld.style.display = "block"
+    }
+    document.querySelector('div[data-nav="1"]').setAttribute('class', 'active')
+    var homeHead = document.getElementsByClassName("home-data-header")[0]
+    var oldMenu = document.getElementsByClassName("home-data-header-old")[0]
+    window.addEventListener("scroll", function (e) {
+      let index = 1;
+      console.log(window.scrollY)
+      if (window.scrollY >= 1293 && isWe && window.scrollY < 3740) {
+        homeHead.style.position = "fixed";
+        oldMenu.style.display = "block"
+        homeHead.style.top = "-2px"
+      } else if (isWe) {
+        oldMenu.style.display = "none"
+        homeHead.style.position = "relative"
+      }
+      if (window.scrollY > 1770 && window.scrollY <= 2240) {
+        index = 2
+      } else if (window.scrollY > 2240 && window.scrollY <= 2750) {
+        index = 3
+      } else if (window.scrollY > 2750 && window.scrollY <= 3260) {
+        index = 4
+      } else if (window.scrollY > 3260) {
+        index = 5
+      }
+      document.querySelector('div[data-nav].active').setAttribute('class', '')
+      document.querySelector('div[data-nav="' + index + '"]').setAttribute('class', 'active')
+    })
+    var io = new IntersectionObserver((callback) => {
+      //  if( callback[0].)
+      if (callback[0].intersectionRatio > 0) {
+        callback[0].target.classList.add('fadeInUp')
+      }
+    }, { threshold: [0, 0.06, 0.1, 0.2, 0.5, 1] });
+    // io.observe(document.querySelector(".show-animation"))
+    let dom = document.getElementsByClassName('show-animation')
+    let length = dom.length
+    for (let i = 0; i < length; i++) {
+      io.observe(dom[i])
+    }
+  </script>
+</body>
+
+</html>
